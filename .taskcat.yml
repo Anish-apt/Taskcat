@@ -1,0 +1,12 @@
+project:
+  name: taskcat-example
+  regions:
+    - ap-south-1
+tests:
+  taskcat-test:
+    template: ./amazon-eks-efs.template.yaml
+    
+    parameters:
+        NodeGroupSecurityGroup: sg-08f16a746c2f214eb
+        PrivateSubnet1ID: subnet-2981d941
+        ClusterName: Taskcat-EFS
